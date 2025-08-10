@@ -1,0 +1,68 @@
+2025-08-09 09:11:40,013 - __main__ - INFO - Downloading document from: https://www.adobe.com/support/products/enterprise/knowledgecenter/media/c4611_sample_explain.pdf
+2025-08-09 09:11:40,296 - __main__ - INFO - Downloaded document to: data\uploaded_docs\doc_727cc5f6a282499b8fd073243a3d7efc.pdf
+2025-08-09 09:11:40,816 - __main__ - ERROR - Document processing failed: 'EmbeddingsManager' object has no attribute 'embed_texts'
+2025-08-09 09:19:12,759 - __main__ - INFO - Downloading document from: https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf
+2025-08-09 09:19:13,904 - __main__ - INFO - Downloaded document to: data\uploaded_docs\doc_b94747cf66ce495f912b900a3454aa3a.pdf
+2025-08-09 09:19:14,172 - __main__ - ERROR - Document processing failed: No content extracted from document
+2025-08-09 09:19:18,611 - __main__ - INFO - Downloading document from: https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf
+2025-08-09 09:19:19,619 - __main__ - INFO - Downloaded document to: data\uploaded_docs\doc_2f1f9c8159f3446483adfa83dca752fb.pdf
+2025-08-09 09:19:19,973 - __main__ - ERROR - Document processing failed: No content extracted from document
+2025-08-09 09:25:18,354 - __main__ - INFO - Downloading document from: https://hackrx.blob.core.windows.net/assets/policy.pdf
+2025-08-09 09:25:18,784 - __main__ - ERROR - Error downloading document from https://hackrx.blob.core.windows.net/assets/policy.pdf: 409 Client Error: Public access is not permitted on this storage account. for url: https://hackrx.blob.core.windows.net/assets/policy.pdf
+2025-08-09 09:34:54,139 - __main__ - INFO - Downloading document from: test
+2025-08-09 09:34:54,146 - __main__ - ERROR - Error downloading document from test: Invalid URL 'test': No scheme supplied. Perhaps you meant https://test?
+2025-08-09 09:34:55,066 - __main__ - INFO - Downloading document from: https://example.com/sample.pdf
+2025-08-09 09:35:39,038 - __main__ - ERROR - Error downloading document from https://example.com/sample.pdf: 404 Client Error: Not Found for url: https://example.com/sample.pdf
+2025-08-09 09:35:39,182 - __main__ - INFO - Downloading document from: https://hackrx.blob.core.windows.net/assets/policy.pdf
+2025-08-09 09:35:39,601 - __main__ - ERROR - Error downloading document from https://hackrx.blob.core.windows.net/assets/policy.pdf: 409 Client Error: Public access is not permitted on this storage account. for url: https://hackrx.blob.core.windows.net/assets/policy.pdf
+2025-08-09 09:35:40,206 - __main__ - INFO - Downloading document from: https://hackrx.blob.core.windows.net/assets/policy.pdf
+2025-08-09 09:35:40,481 - __main__ - ERROR - Error downloading document from https://hackrx.blob.core.windows.net/assets/policy.pdf: 409 Client Error: Public access is not permitted on this storage account. for url: https://hackrx.blob.core.windows.net/assets/policy.pdf
+2025-08-09 09:35:40,997 - __main__ - INFO - Downloading document from: https://hackrx.blob.core.windows.net/assets/policy.pdf
+2025-08-09 09:35:41,324 - __main__ - ERROR - Error downloading document from https://hackrx.blob.core.windows.net/assets/policy.pdf: 409 Client Error: Public access is not permitted on this storage account. for url: https://hackrx.blob.core.windows.net/assets/policy.pdf
+2025-08-09 09:35:41,811 - __main__ - INFO - Downloading document from: https://invalid-url-12345.com/nonexistent.pdf
+2025-08-09 09:35:42,214 - __main__ - ERROR - Error downloading document from https://invalid-url-12345.com/nonexistent.pdf: HTTPSConnectionPool(host='invalid-url-12345.com', port=443): Max retries exceeded with url: /nonexistent.pdf (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F6FEE09E10>: Failed to resolve 'invalid-url-12345.com' ([Errno 11001] getaddrinfo failed)"))
+2025-08-09 09:35:42,738 - __main__ - INFO - Downloading document from: https://example.com/test.pdf
+2025-08-09 09:36:26,735 - __main__ - ERROR - Error downloading document from https://example.com/test.pdf: 404 Client Error: Not Found for url: https://example.com/test.pdf
+2025-08-09 09:36:26,848 - __main__ - INFO - Downloading document from: https://hackrx.blob.core.windows.net/assets/policy.pdf
+2025-08-09 09:36:27,172 - __main__ - ERROR - Error downloading document from https://hackrx.blob.core.windows.net/assets/policy.pdf: 409 Client Error: Public access is not permitted on this storage account. for url: https://hackrx.blob.core.windows.net/assets/policy.pdf
+2025-08-09 09:46:28,367 - __main__ - INFO - Downloading document from: test
+2025-08-09 09:46:28,367 - __main__ - ERROR - Error downloading document from test: Invalid URL 'test': No scheme supplied. Perhaps you meant https://test?
+2025-08-09 09:46:29,368 - __main__ - INFO - Downloading document from: https://example.com/sample.pdf
+2025-08-09 09:46:31,542 - __main__ - ERROR - Error downloading document from https://example.com/sample.pdf: 404 Client Error: Not Found for url: https://example.com/sample.pdf
+2025-08-09 09:46:32,000 - __main__ - INFO - Downloading document from: https://hackrx.blob.core.windows.net/assets/policy.pdf
+2025-08-09 09:46:32,421 - __main__ - ERROR - Error downloading document from https://hackrx.blob.core.windows.net/assets/policy.pdf: 409 Client Error: Public access is not permitted on this storage account. for url: https://hackrx.blob.core.windows.net/assets/policy.pdf
+2025-08-09 09:46:32,969 - __main__ - INFO - Downloading document from: https://hackrx.blob.core.windows.net/assets/policy.pdf
+2025-08-09 09:46:33,259 - __main__ - ERROR - Error downloading document from https://hackrx.blob.core.windows.net/assets/policy.pdf: 409 Client Error: Public access is not permitted on this storage account. for url: https://hackrx.blob.core.windows.net/assets/policy.pdf
+2025-08-09 09:46:33,769 - __main__ - INFO - Downloading document from: https://hackrx.blob.core.windows.net/assets/policy.pdf
+2025-08-09 09:46:34,065 - __main__ - ERROR - Error downloading document from https://hackrx.blob.core.windows.net/assets/policy.pdf: 409 Client Error: Public access is not permitted on this storage account. for url: https://hackrx.blob.core.windows.net/assets/policy.pdf
+2025-08-09 09:46:34,542 - __main__ - INFO - Downloading document from: https://invalid-url-12345.com/nonexistent.pdf
+2025-08-09 09:46:34,574 - __main__ - ERROR - Error downloading document from https://invalid-url-12345.com/nonexistent.pdf: HTTPSConnectionPool(host='invalid-url-12345.com', port=443): Max retries exceeded with url: /nonexistent.pdf (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F6FEDA6470>: Failed to resolve 'invalid-url-12345.com' ([Errno 11001] getaddrinfo failed)"))
+2025-08-09 09:46:34,839 - __main__ - INFO - Downloading document from: https://example.com/test.pdf
+2025-08-09 09:46:36,660 - __main__ - ERROR - Error downloading document from https://example.com/test.pdf: 404 Client Error: Not Found for url: https://example.com/test.pdf
+2025-08-09 09:46:36,951 - __main__ - INFO - Downloading document from: https://hackrx.blob.core.windows.net/assets/policy.pdf
+2025-08-09 09:46:37,232 - __main__ - ERROR - Error downloading document from https://hackrx.blob.core.windows.net/assets/policy.pdf: 409 Client Error: Public access is not permitted on this storage account. for url: https://hackrx.blob.core.windows.net/assets/policy.pdf
+2025-08-09 10:02:10,305 - __main__ - INFO - Downloading document from: test
+2025-08-09 10:02:10,306 - __main__ - ERROR - Error downloading document from test: Invalid URL 'test': No scheme supplied. Perhaps you meant https://test?
+2025-08-09 10:02:11,011 - __main__ - INFO - Downloading document from: https://example.com/sample.pdf
+2025-08-09 10:02:12,155 - __main__ - ERROR - Error downloading document from https://example.com/sample.pdf: 404 Client Error: Not Found for url: https://example.com/sample.pdf
+2025-08-09 10:02:12,594 - __main__ - INFO - Downloading document from: https://hackrx.blob.core.windows.net/assets/policy.pdf
+2025-08-09 10:02:12,964 - __main__ - ERROR - Error downloading document from https://hackrx.blob.core.windows.net/assets/policy.pdf: 409 Client Error: Public access is not permitted on this storage account. for url: https://hackrx.blob.core.windows.net/assets/policy.pdf
+2025-08-09 10:02:13,390 - __main__ - INFO - Downloading document from: https://hackrx.blob.core.windows.net/assets/policy.pdf
+2025-08-09 10:02:13,667 - __main__ - ERROR - Error downloading document from https://hackrx.blob.core.windows.net/assets/policy.pdf: 409 Client Error: Public access is not permitted on this storage account. for url: https://hackrx.blob.core.windows.net/assets/policy.pdf
+2025-08-09 10:02:14,094 - __main__ - INFO - Downloading document from: https://hackrx.blob.core.windows.net/assets/policy.pdf
+2025-08-09 10:02:14,365 - __main__ - ERROR - Error downloading document from https://hackrx.blob.core.windows.net/assets/policy.pdf: 409 Client Error: Public access is not permitted on this storage account. for url: https://hackrx.blob.core.windows.net/assets/policy.pdf
+2025-08-09 10:02:14,781 - __main__ - INFO - Downloading document from: https://invalid-url-12345.com/nonexistent.pdf
+2025-08-09 10:02:14,942 - __main__ - ERROR - Error downloading document from https://invalid-url-12345.com/nonexistent.pdf: HTTPSConnectionPool(host='invalid-url-12345.com', port=443): Max retries exceeded with url: /nonexistent.pdf (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F6FEE08700>: Failed to resolve 'invalid-url-12345.com' ([Errno 11001] getaddrinfo failed)"))
+2025-08-09 10:02:15,187 - __main__ - INFO - Downloading document from: https://example.com/test.pdf
+2025-08-09 10:02:16,283 - __main__ - ERROR - Error downloading document from https://example.com/test.pdf: 404 Client Error: Not Found for url: https://example.com/test.pdf
+2025-08-09 10:02:16,523 - __main__ - INFO - Downloading document from: https://hackrx.blob.core.windows.net/assets/policy.pdf
+2025-08-09 10:02:16,788 - __main__ - ERROR - Error downloading document from https://hackrx.blob.core.windows.net/assets/policy.pdf: 409 Client Error: Public access is not permitted on this storage account. for url: https://hackrx.blob.core.windows.net/assets/policy.pdf
+2025-08-09 10:18:14,922 - utils.caching - INFO - RAG Cache initialized: enabled=True, TTL=86400s, max_size=500MB
+2025-08-09 10:18:14,922 - utils.caching - INFO - Cleared 0 cache files, freed 0.0MB
+2025-08-09 10:18:29,313 - utils.caching - INFO - Cleared 0 cache files, freed 0.0MB
+2025-08-09 16:19:01,348 - __main__ - ERROR - Token mismatch. Expected length: 64, Got length: 15
+2025-08-09 16:20:28,346 - utils.caching - INFO - RAG Cache initialized: enabled=True, TTL=86400s, max_size=500MB
+2025-08-09 16:20:28,346 - utils.caching - INFO - Cleaned up 0 expired cache files, freed 0.0MB
+2025-08-09 16:20:40,889 - utils.caching - INFO - Cleared 0 cache files, freed 0.0MB
+2025-08-09 16:27:42,536 - __main__ - ERROR - Token mismatch. Expected length: 64, Got length: 15
+2025-08-09 16:29:48,226 - __main__ - ERROR - Token mismatch. Expected length: 64, Got length: 15

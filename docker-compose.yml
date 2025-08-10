@@ -1,0 +1,86 @@
+# docker-compose.yml - Corrected for HackRx 6.0 RAG System
+
+version: '3.8'
+
+services:
+  hackrx-rag-system:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: hackrx-rag-system
+    ports:
+      - "8000:8000"
+    environment:
+      # Core Configuration
+      - PYTHONPATH=/app
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+      
+      # File Paths (mapped to container paths)
+      - PDF_UPLOAD_PATH=/app/data/uploaded_docs
+      - VECTOR_STORE_PATH=/app/data/vector_store
+      - LOGS_PATH=/app/logs
+      
+      # RAG Configuration (consistent with your corrected settings)
+      - EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
+      - EMBEDDING_DIMENSIONS=384
+      - CHUNK_SIZE=1000
+      - CHUNK_OVERLAP=200
+      - VECTOR_BACKEND=faiss
+      
+      # HackRx Configuration
+      - HACKRX_TOKEN=6ca800c46dd70bb4a8ef18a01692ac76721bb2b50303e31dbed18a186993ac1e
+      
+      # Optional: OpenAI (if you plan to use it later)
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      
+      # Performance Settings
+      - MAX_FILE_SIZE_MB=25
+      - ENABLE_CACHING=true
+      - ENABLE_DEBUG_LOGGING=true
+      - LOG_LEVEL=INFO
+    
+    volumes:
+      # Data persistence
+      - ./data:/app/data
+      - ./logs:/app/logs
+      # Configuration files (optional)
+      - ./.env:/app/.env:ro
+    
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s  # Give the app time to start
+    
+    restart: unless-stopped
+    
+    # Resource limits
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+          cpus: '1.0'
+        reservations:
+          memory: 1G
+          cpus: '0.5'
+    
+    # Logging configuration
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+# Named volumes for data persistence
+volumes:
+  rag_data:
+    driver: local
+  rag_logs:
+    driver: local
+
+# Optional: Network configuration for future scaling
+networks:
+  default:
+    name: hackrx-rag-network
